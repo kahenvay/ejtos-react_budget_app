@@ -9,7 +9,6 @@ import Budget from './components/Budget';
 import { AppProvider } from './context/AppContext';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
-import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
 
 const App = () => {

@@ -9,10 +9,14 @@ const AllocationForm = (props) => {
 	const [action, setAction] = useState('');
 
 	const submitEvent = () => {
+		console.log('cost', cost);
+
 		if (cost > remaining) {
 			alert('The value cannot exceed remaining funds  £' + remaining);
 			setCost('');
-			return;
+		} else if (!/^[0-9]+$/.test(cost)) {
+			alert('The value must be a number!');
+			setCost('');
 		}
 
 		const expense = {
